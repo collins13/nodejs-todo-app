@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>node html page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+  <p><%=qs.dept%></P>
+    <p><%=qs.person%></P>
+  <% include partials/nav.ejs %>
+  <h1>contact us the ninjas!!</h1>
+
+  <form id="contact-form" method="POST" action="/contact">
+  <div class="form-group">
+    <label for="who">who do u want to contact:</label>
+    <input type="text" class="form-control col-md-4" name="who" value=""><br/>
+  </div>
+  <label for="department">which department:</label>
+  <input type="text" class="form-control col-md-4" name="department" value=""><br/>
+  </div>
+  <label for="email">Email address:</label>
+  <input type="email" class="form-control col-md-4" name="email"><br/>
+  </div>
+  <input type="submit"  value="submit">
+</form>
+  <p>ninjas@gmail.com</p>
+</body>
+</html>
